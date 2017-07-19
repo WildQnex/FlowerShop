@@ -10,8 +10,8 @@ public class Bucket {
 
     public Bucket(){
         this.cost = 0;
-        this.flowers = new ArrayList<AbstractFlower>();
-        this.acessories = new ArrayList<Acessory>();
+        this.flowers = new ArrayList<>();
+        this.acessories = new ArrayList<>();
     }
 
     public void addFlower(AbstractFlower flower) {

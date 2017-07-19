@@ -1,8 +1,7 @@
-package by.bsuir.flowerShop.reports;
+package by.bsuir.flowerShop.report;
 
 
 import by.bsuir.flowerShop.entity.AbstractFlower;
-import by.bsuir.flowerShop.entity.Bucket;
 import by.bsuir.flowerShop.logic.Creator;
 import by.bsuir.flowerShop.logic.Finder;
 

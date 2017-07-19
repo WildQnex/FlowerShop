@@ -1,6 +1,6 @@
 package by.bsuir.flowerShop.main;
 
-import by.bsuir.flowerShop.reports.Reporter;
+import by.bsuir.flowerShop.report.Reporter;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.apache.log4j.Logger;
