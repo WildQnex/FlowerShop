@@ -1,0 +1,14 @@
+
+17.02.2017 11:30:12 : Class - main , at Line 22, type DEBUG. Message: Объект = name : Vadim, height : 184
+17.02.2017 11:44:31 : Class - main , at Line 21, type DEBUG. Message: Объект = Garden
+17.02.2017 11:47:59 : Class - main , at Line 21, type DEBUG. Message: Объект = Garden - my flower
+17.02.2017 11:48:25 : Class - main , at Line 21, type DEBUG. Message: Объект = Garden - 
+17.02.2017 12:19:13 : Class - main , at Line 21, type DEBUG. Message: Объект = Garden - my flower
+17.02.2017 12:19:33 : Class - setHeight , at Line 40, type INFO . Message: Некоректный размер цветка
+17.02.2017 12:19:33 : Class - main , at Line 22, type DEBUG. Message: Объект = Garden - my flower
+17.02.2017 12:25:26 : Method - setHeight , at Line 40, type INFO . Message: Некоректный размер цветка
+17.02.2017 12:25:26 : Method - main , at Line 22, type DEBUG. Message: Объект = Garden - my flower
+17.02.2017 12:26:15 : Class - by.bsuir.flowerShop.main.Main, method - setHeight , at Line 40, type INFO . Message: Некоректный размер цветка
+17.02.2017 12:26:15 : Class - by.bsuir.flowerShop.main.Main, method - main , at Line 22, type DEBUG. Message: Объект = Garden - my flower
+17.02.2017 12:26:23 : Class - by.bsuir.flowerShop.main.Main, method - setHeight , at Line 40, type INFO . Message: Некоректный размер цветка
+17.02.2017 12:26:23 : Class - by.bsuir.flowerShop.main.Main, method - main , at Line 22, type DEBUG. Message: Объект = Garden - my flower
