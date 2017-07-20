@@ -2,6 +2,8 @@ package by.bsuir.flowerShop.report;
 
 
 import by.bsuir.flowerShop.entity.AbstractFlower;
+import by.bsuir.flowerShop.entity.Accessory;
+import by.bsuir.flowerShop.entity.Bouquet;
 import by.bsuir.flowerShop.logic.Creator;
 import by.bsuir.flowerShop.logic.Finder;
 import by.bsuir.flowerShop.logic.Sorter;
@@ -19,15 +21,36 @@ public class Reporter {
         new DOMConfigurator().doConfigure("log4j.xml", LogManager.getLoggerRepository());
     }
 
-    public static void getFirstReport(){
-        ArrayList<AbstractFlower> result = Finder.findInInterval(Creator.createBucket1(),200, 300);
+    public static void getBouquetReport() {
+        Bouquet bouquet = Creator.createBucket();
+        LOGGER.debug("****************************************** \n" +
+                     "                  Bouquet\n" +
+                     "                Cost: " + bouquet.getCost() + "\n" +
+                     "****************************************** ");
+        for (AbstractFlower res: bouquet.getFlowers()){
+            LOGGER.debug(res);
+        }
+        for (Accessory res: bouquet.getAccessories()){
+            LOGGER.debug(res);
+        }
+    }
+
+    public static void getFindReport(int min, int max){
+        ArrayList<AbstractFlower> result = Finder.findInInterval(Creator.createBucket(),min, max);
+        LOGGER.debug("****************************************** \n" +
+                     "          Searched Flowers: \n" +
+                     "          Range: " + min + " - " + max +" \n" +
+                     "******************************************");
         for (AbstractFlower res: result){
             LOGGER.debug(res);
 
         }
     }
-    public static void getSecondReport(){
-        ArrayList<AbstractFlower> result = Sorter.sortByFreshness(Creator.createBucket1()).getFlowers();
+    public static void getSortReport(){
+        ArrayList<AbstractFlower> result = Sorter.sortByFreshness(Creator.createBucket()).getFlowers();
+        LOGGER.debug("****************************************** \n" +
+                    "        Sorted by length bouquet\n" +
+                    "******************************************");
         for (AbstractFlower res: result){
             LOGGER.debug(res);
         }

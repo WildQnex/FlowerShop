@@ -13,4 +13,9 @@ public class Accessory {
     public double getCost() {
         return cost;
     }
+
+    @Override
+    public String toString(){
+        return "Accessory: " + name + ", Cost: " + cost;
+    }
 }

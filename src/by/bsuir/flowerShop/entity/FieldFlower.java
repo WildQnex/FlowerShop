@@ -16,7 +16,7 @@ public class FieldFlower extends AbstractFlower {
 
     @Override
     public String toString(){
-        return "Name: " + getName() + ", Color: " + getColor() + ", Height: " + getHeight()
+        return "Field flower. Name: " + getName() + ", Color: " + getColor() + ", Height: " + getHeight()
                 + ", Freshness: " + getFreshness() + ", Grew at " + fieldType;
     }
 

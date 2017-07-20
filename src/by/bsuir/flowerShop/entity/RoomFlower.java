@@ -2,12 +2,17 @@ package by.bsuir.flowerShop.entity;
 
 
 public class RoomFlower extends AbstractFlower {
-    public RoomFlower(String name, String color, int height, int freshness, double cost) {
+
+    private String potColor;
+
+    public RoomFlower(String name, String color,String potColor, int height, int freshness, double cost) {
         super(name, color, height, freshness, cost);
+        this.potColor = potColor;
     }
+
     @Override
     public String toString(){
-        return "Name: " + getName() + ", Color: " + getColor() + ", Height: " + getHeight()
-                + ", Freshness: " + getFreshness();
+        return "Room flower. Name: " + getName() + ", Color: " + getColor() + ", Height: " + getHeight()
+                + ", Freshness: " + getFreshness() + ", Pot's color: " + potColor;
     }
 }

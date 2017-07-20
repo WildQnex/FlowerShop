@@ -24,6 +24,10 @@ public class Bouquet {
         this.cost += accessory.getCost();
     }
 
+    public ArrayList<Accessory> getAccessories(){
+        return accessories;
+    }
+
     public ArrayList<AbstractFlower> getFlowers(){
         return flowers;
     }

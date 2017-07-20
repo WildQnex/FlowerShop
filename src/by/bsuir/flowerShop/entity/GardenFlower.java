@@ -11,7 +11,7 @@ public class GardenFlower extends AbstractFlower {
 
     @Override
     public String toString(){
-        return "Name: " + getName() + ", Color: " + getColor() + ", Height: " + getHeight()
-                + ", Freshness: " + getFreshness() + ", \n" + "Brought from " + country;
+        return "Garden flower. Name: " + getName() + ", Color: " + getColor() + ", Height: " + getHeight()
+                + ", Freshness: " + getFreshness() + ", " + "Brought from " + country;
     }
 }

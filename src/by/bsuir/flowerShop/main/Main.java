@@ -5,7 +5,8 @@ import by.bsuir.flowerShop.report.Reporter;
 public class Main {
 
     public static void main(String[] args) {
-        Reporter.getFirstReport();
-        Reporter.getSecondReport();
+        Reporter.getBouquetReport();
+        Reporter.getFindReport(100,300);
+        Reporter.getSortReport();
     }
 }
