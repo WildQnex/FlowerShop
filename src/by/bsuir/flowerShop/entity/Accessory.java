@@ -1,11 +1,11 @@
 package by.bsuir.flowerShop.entity;
 
 
-public class Acessory {
+public class Accessory {
     private String name;
     private double cost;
 
-    public Acessory(String name,double cost){
+    public Accessory(String name, double cost){
         this.name = name;
         this.cost = cost;
     }

@@ -4,21 +4,18 @@ package by.bsuir.flowerShop.logic;
 import by.bsuir.flowerShop.entity.*;
 
 public class Creator {
-    public static Bucket createBucket1(){
-        Bucket bucket = new Bucket();
-        bucket.addAcessory(new Acessory("Ленточка", 0.7));
-        bucket.addFlower( new FieldFlower("Ромашка", "Белая", "Поле", 200, 2, 5));
-        bucket.addFlower(new GardenFlower("Роза", "Красная", "Ботанический Сад", 300, 1, 8.5));
-        return bucket;
+    public static Bouquet createBucket1(){
+        Bouquet bouquet = new Bouquet();
+        bouquet.addAccessory(new Accessory("Tape", 0.7));
+        bouquet.addFlower( new FieldFlower("Chamomile", "White", "Field", 200, 2, 5));
+        bouquet.addFlower(new GardenFlower("Rose", "Red", "Botanical Garden", 300, 1, 8.5));
+        return bouquet;
     }
-
-    public static Bucket createBucket2(){
-        Bucket bucket = new Bucket();
-        AbstractFlower flower;
-        Acessory acessory;
-        acessory = new Acessory("Обертка", 0.7);
-        bucket.addAcessory(acessory);
-
-        return bucket;
+    public static Bouquet createBucket2(){
+        Bouquet bouquet = new Bouquet();
+        Accessory accessory;
+        accessory = new Accessory("Wrapper", 0.7);
+        bouquet.addAccessory(accessory);
+        return bouquet;
     }
 }

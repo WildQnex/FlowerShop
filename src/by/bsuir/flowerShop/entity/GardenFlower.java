@@ -2,16 +2,16 @@ package by.bsuir.flowerShop.entity;
 
 public class GardenFlower extends AbstractFlower {
 
-    private String gardenName;
+    private String country;
 
-    public GardenFlower(String name, String color, String gardenName, int height, int freshness, double cost) {
+    public GardenFlower(String name, String color, String country, int height, int freshness, double cost) {
         super(name, color, height, freshness, cost);
-        this.gardenName = gardenName;
+        this.country = country;
     }
 
     @Override
     public String toString(){
         return "Name: " + getName() + ", Color: " + getColor() + ", Height: " + getHeight()
-                + ", Freshness: " + getFreshness() + ", Grew in " + gardenName;
+                + ", Freshness: " + getFreshness() + ", \n" + "Brought from " + country;
     }
 }

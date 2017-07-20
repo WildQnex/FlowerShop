@@ -33,10 +33,6 @@ public abstract class AbstractFlower {
         return height;
     }
 
-    public void incFreshness() {
-        this.freshness++;
-    }
-
     public double getCost() {
         return cost;
     }

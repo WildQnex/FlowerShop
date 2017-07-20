@@ -12,3 +12,7 @@
 17.02.2017 12:26:15 : Class - by.bsuir.flowerShop.main.Main, method - main , at Line 22, type DEBUG. Message: Объект = Garden - my flower
 17.02.2017 12:26:23 : Class - by.bsuir.flowerShop.main.Main, method - setHeight , at Line 40, type INFO . Message: Некоректный размер цветка
 17.02.2017 12:26:23 : Class - by.bsuir.flowerShop.main.Main, method - main , at Line 22, type DEBUG. Message: Объект = Garden - my flower
+20.07.2017 17:13:21 : Class - by.bsuir.flowerShop.main.Main, method - getFirstReport , at Line 25, type DEBUG. Message: Name: Ромашка, Color: Белая, Height: 200, Freshness: 2, Grew at Поле
+20.07.2017 17:13:21 : Class - by.bsuir.flowerShop.main.Main, method - getFirstReport , at Line 25, type DEBUG. Message: Name: Роза, Color: Красная, Height: 300, Freshness: 1, Grew in Ботанический Сад
+20.07.2017 17:13:21 : Class - by.bsuir.flowerShop.main.Main, method - getSecondReport , at Line 32, type DEBUG. Message: Name: Роза, Color: Красная, Height: 300, Freshness: 1, Grew in Ботанический Сад
+20.07.2017 17:13:21 : Class - by.bsuir.flowerShop.main.Main, method - getSecondReport , at Line 32, type DEBUG. Message: Name: Ромашка, Color: Белая, Height: 200, Freshness: 2, Grew at Поле

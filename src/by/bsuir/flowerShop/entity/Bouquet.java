@@ -3,15 +3,15 @@ package by.bsuir.flowerShop.entity;
 
 import java.util.ArrayList;
 
-public class Bucket {
-    double  cost;
+public class Bouquet {
+    private double  cost;
     private ArrayList<AbstractFlower> flowers;
-    private ArrayList<Acessory> acessories;
+    private ArrayList<Accessory> accessories;
 
-    public Bucket(){
+    public Bouquet(){
         this.cost = 0;
         this.flowers = new ArrayList<>();
-        this.acessories = new ArrayList<>();
+        this.accessories = new ArrayList<>();
     }
 
     public void addFlower(AbstractFlower flower) {
@@ -19,13 +19,17 @@ public class Bucket {
         this.cost += flower.getCost();
     }
 
-    public void addAcessory(Acessory acessory) {
-        acessories.add(acessory);
-        this.cost += acessory.getCost();
+    public void addAccessory(Accessory accessory) {
+        accessories.add(accessory);
+        this.cost += accessory.getCost();
     }
 
     public ArrayList<AbstractFlower> getFlowers(){
         return flowers;
+    }
+
+    public void setFlowers(ArrayList<AbstractFlower> flowers){
+        this.flowers = flowers;
     }
 
 

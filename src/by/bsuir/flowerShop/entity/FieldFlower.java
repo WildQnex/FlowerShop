@@ -5,7 +5,7 @@ public class FieldFlower extends AbstractFlower {
 
     private String fieldType;
 
-    public FieldFlower(String name, String color, String fieldType,int height, int freshness, double cost) {
+    public FieldFlower(String name, String color, String fieldType, int height, int freshness, double cost) {
         super(name, color, height, freshness, cost);
         this.fieldType = fieldType;
     }

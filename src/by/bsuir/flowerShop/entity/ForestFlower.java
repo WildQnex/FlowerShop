@@ -16,7 +16,7 @@ public class ForestFlower extends AbstractFlower {
 
     @Override
     public String toString(){
-        return "Name: "+getName() + ", Color: " + getColor() + ", Height: "+getHeight() +
+        return "Name: " + getName() + ", Color: " + getColor() + ", Height: " + getHeight() +
                 ", Freshness: " + getFreshness() + ", Grew in " + forestType;
     }
 }
