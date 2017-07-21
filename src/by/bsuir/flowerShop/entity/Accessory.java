@@ -1,6 +1,7 @@
 package by.bsuir.flowerShop.entity;
 
 
+
 public class Accessory {
     private String name;
     private double cost;

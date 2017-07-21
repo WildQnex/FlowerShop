@@ -1,6 +1,8 @@
 package by.bsuir.flowerShop.entity;
 
 
+import by.bsuir.flowerShop.exception.IncorrectInputException;
+
 import java.util.ArrayList;
 
 public class Bouquet {
@@ -14,12 +16,18 @@ public class Bouquet {
         this.accessories = new ArrayList<>();
     }
 
-    public void addFlower(AbstractFlower flower) {
+    public void addFlower(AbstractFlower flower) throws IncorrectInputException{
+        if(flower.getCost() < 0){
+            throw new IncorrectInputException("Cost or Freshness of Flower cant't be negative!", flower.getCost(), flower.getFreshness());
+        }
         flowers.add(flower);
         this.cost += flower.getCost();
     }
 
-    public void addAccessory(Accessory accessory) {
+    public void addAccessory(Accessory accessory) throws IncorrectInputException{
+        if(accessory.getCost() < 0){
+            throw new IncorrectInputException("Cost of Accessory cant't be negative!", accessory.getCost());
+        }
         accessories.add(accessory);
         this.cost += accessory.getCost();
     }
