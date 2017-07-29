@@ -18,7 +18,10 @@ public class Bouquet {
 
     public void addFlower(AbstractFlower flower) throws IncorrectInputException{
         if(flower.getCost() < 0){
-            throw new IncorrectInputException("Cost or Freshness of Flower cant't be negative!", flower.getCost(), flower.getFreshness());
+            throw new IncorrectInputException("Cost of Flower cant't be negative! Cost:" + flower.getCost());
+        }
+        if(flower.getCost() < 0){
+            throw new IncorrectInputException("Freshness of Flower cant't be negative! Freshness:" + flower.getFreshness());
         }
         flowers.add(flower);
         this.cost += flower.getCost();
@@ -26,7 +29,7 @@ public class Bouquet {
 
     public void addAccessory(Accessory accessory) throws IncorrectInputException{
         if(accessory.getCost() < 0){
-            throw new IncorrectInputException("Cost of Accessory cant't be negative!", accessory.getCost());
+            throw new IncorrectInputException("Cost of Accessory cant't be negative! Cost: " + accessory.getCost());
         }
         accessories.add(accessory);
         this.cost += accessory.getCost();

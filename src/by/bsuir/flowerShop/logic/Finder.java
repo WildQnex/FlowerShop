@@ -10,10 +10,10 @@ import java.util.ArrayList;
 public class Finder{
     public static ArrayList<AbstractFlower> findInInterval(Bouquet bouquet, int min, int max) throws IncorrectInputException{
         if ((min < 0) || (max < 0)){
-            throw new IncorrectInputException("Negative value is not valid!", min, max);
+            throw new IncorrectInputException("Negative value is not valid! Min: " + min + ", Max: " + max);
         }
         if (min > max){
-            throw new IncorrectInputException("Max value cant be less then min!", min, max);
+            throw new IncorrectInputException("Max value cant be less then min! Min: " + min + ", Max: " + max);
         }
         ArrayList<AbstractFlower> result = new ArrayList<>();
         for (AbstractFlower flower : bouquet.getFlowers()) {

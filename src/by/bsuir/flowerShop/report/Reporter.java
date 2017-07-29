@@ -36,7 +36,7 @@ public class Reporter {
                 LOGGER.debug(res);
             }
         }catch (IncorrectInputException e){
-            LOGGER.error("ERROR! " + e.getMessage() + " Values: " + e.getFirstNumber() + " , " + e.getSecondNumber());
+            LOGGER.error("ERROR! " + e.getMessage());
         }
     }
 
@@ -51,7 +51,7 @@ public class Reporter {
                 LOGGER.debug(res);
             }
         }catch (IncorrectInputException e){
-            LOGGER.error("ERROR! " + e.getMessage() + " Values: " + e.getFirstNumber() + " , "+ e.getSecondNumber());
+            LOGGER.error("ERROR! " + e.getMessage());
         }
     }
     public static void getSortReport(){
@@ -64,7 +64,7 @@ public class Reporter {
                 LOGGER.debug(res);
             }
         }catch (IncorrectInputException e){
-            LOGGER.error("ERROR! " + e.getMessage() + " Values: " + e.getFirstNumber() + " , " + e.getSecondNumber());
+            LOGGER.error("ERROR! " + e.getMessage());
         }
     }
 }
