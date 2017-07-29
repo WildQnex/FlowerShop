@@ -58,7 +58,7 @@ public class Reporter {
         try {
             ArrayList<AbstractFlower> result = Sorter.sortByFreshness(Creator.createBucket()).getFlowers();
             LOGGER.debug("****************************************** \n" +
-                    "        Sorted by length bouquet\n" +
+                    "        Sorted by freshness bouquet\n" +
                     "******************************************");
             for (AbstractFlower res : result) {
                 LOGGER.debug(res);

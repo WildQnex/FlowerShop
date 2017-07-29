@@ -11,8 +11,14 @@ import java.util.Comparator;
 public class Sorter {
     public static Bouquet sortByFreshness(Bouquet bouquet) throws IncorrectInputException{
         ArrayList<AbstractFlower> flowers = bouquet.getFlowers();
-        flowers.sort(Comparator.comparingInt(AbstractFlower::getFreshness));
+        flowers.sort(new Compare());
         bouquet.setFlowers(flowers);
         return bouquet;
+    }
+    static class Compare implements Comparator<AbstractFlower>{
+        @Override
+        public int compare(AbstractFlower flower1, AbstractFlower flower2){
+                return flower2.getFreshness() - flower1.getFreshness();
+        }
     }
 }

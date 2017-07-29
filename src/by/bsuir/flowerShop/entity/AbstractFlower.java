@@ -36,4 +36,12 @@ public abstract class AbstractFlower {
     public double getCost() {
         return cost;
     }
+
+    public void setFreshness(int freshness) {
+        this.freshness = freshness;
+    }
+
+    public void setCost(double cost) {
+        this.cost = cost;
+    }
 }

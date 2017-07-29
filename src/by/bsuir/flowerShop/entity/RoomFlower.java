@@ -13,6 +13,6 @@ public class RoomFlower extends AbstractFlower {
     @Override
     public String toString(){
         return "Room flower. Name: " + getName() + ", Color: " + getColor() + ", Height: " + getHeight()
-                + ", Freshness: " + getFreshness() + ", Pot's color:  " + potColor;
+                + ", Pot's color:  " + potColor;
     }
 }

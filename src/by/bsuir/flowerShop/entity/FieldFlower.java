@@ -3,21 +3,21 @@ package by.bsuir.flowerShop.entity;
 
 public class FieldFlower extends AbstractFlower {
 
-    private String country;
+    private String fieldType;
 
     public FieldFlower(String name, String color, String fieldType, int height, int freshness, double cost) {
         super(name, color, height, freshness, cost);
-        this.country = fieldType;
+        this.fieldType = fieldType;
     }
 
     public String getFieldType() {
-        return country;
+        return fieldType;
     }
 
     @Override
     public String toString(){
         return "Field flower. Name: " + getName() + ", Color: " + getColor() + ", Height: " + getHeight()
-                + ", Freshness: " + getFreshness() + ", Grew at " + country;
+                + ", Freshness: " + getFreshness() + ", Grew at " + fieldType;
     }
 
 }

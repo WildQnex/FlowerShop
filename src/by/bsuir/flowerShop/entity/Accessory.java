@@ -15,6 +15,10 @@ public class Accessory {
         return cost;
     }
 
+    public void setCost(double cost) {
+        this.cost = cost;
+    }
+
     @Override
     public String toString(){
         return "Accessory: " + name + ", Cost: " + cost;
