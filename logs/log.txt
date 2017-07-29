@@ -406,3 +406,22 @@ Brought from Botanical Garden
 ******************************************
 29.07.2017 20:34:31 : Class - by.bsuir.flowerShop.main.Main, method - getSortReport , at Line 64, type DEBUG. Message: Field flower. Name: Chamomile, Color: White, Height: 200, Freshness: 2, Grew at Field
 29.07.2017 20:34:31 : Class - by.bsuir.flowerShop.main.Main, method - getSortReport , at Line 64, type DEBUG. Message: Garden flower. Name: Rose, Color: Red, Height: 300, Freshness: 1, Brought from Botanical Garden
+29.07.2017 21:50:39 : Class - by.bsuir.flowerShop.main.Main, method - getBouquetReport , at Line 28, type DEBUG. Message: ****************************************** 
+                  Bouquet
+                Cost: 15.4
+****************************************** 
+29.07.2017 21:50:39 : Class - by.bsuir.flowerShop.main.Main, method - getBouquetReport , at Line 33, type DEBUG. Message: Cut flower. Name: Chamomile, Color: White, Height: 200, Freshness: 2
+29.07.2017 21:50:39 : Class - by.bsuir.flowerShop.main.Main, method - getBouquetReport , at Line 33, type DEBUG. Message: Cut flower. Name: Rose, Color: Red, Height: 300, Freshness: 1
+29.07.2017 21:50:39 : Class - by.bsuir.flowerShop.main.Main, method - getBouquetReport , at Line 36, type DEBUG. Message: Accessory: Wrapper, Cost: 1.2
+29.07.2017 21:50:39 : Class - by.bsuir.flowerShop.main.Main, method - getBouquetReport , at Line 36, type DEBUG. Message: Accessory: Tape, Cost: 0.7
+29.07.2017 21:50:39 : Class - by.bsuir.flowerShop.main.Main, method - getFindReport , at Line 46, type DEBUG. Message: ****************************************** 
+          Searched Flowers: 
+          Range: 100 - 300 
+******************************************
+29.07.2017 21:50:39 : Class - by.bsuir.flowerShop.main.Main, method - getFindReport , at Line 51, type DEBUG. Message: Cut flower. Name: Chamomile, Color: White, Height: 200, Freshness: 2
+29.07.2017 21:50:39 : Class - by.bsuir.flowerShop.main.Main, method - getFindReport , at Line 51, type DEBUG. Message: Cut flower. Name: Rose, Color: Red, Height: 300, Freshness: 1
+29.07.2017 21:50:39 : Class - by.bsuir.flowerShop.main.Main, method - getSortReport , at Line 60, type DEBUG. Message: ****************************************** 
+        Sorted by freshness bouquet
+******************************************
+29.07.2017 21:50:39 : Class - by.bsuir.flowerShop.main.Main, method - getSortReport , at Line 64, type DEBUG. Message: Cut flower. Name: Chamomile, Color: White, Height: 200, Freshness: 2
+29.07.2017 21:50:39 : Class - by.bsuir.flowerShop.main.Main, method - getSortReport , at Line 64, type DEBUG. Message: Cut flower. Name: Rose, Color: Red, Height: 300, Freshness: 1

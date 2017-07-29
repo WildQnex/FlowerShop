@@ -5,14 +5,12 @@ public abstract class AbstractFlower {
     private String name;
     private String color;
     private int height;
-    private int freshness;
     private double cost;
 
-    public AbstractFlower(String name, String color, int height, int freshness, double cost){
+    public AbstractFlower(String name, String color, int height, double cost){
         this.name = name;
         this.color = color;
         this.height = height;
-        this.freshness = freshness;
         this.cost = cost;
     }
 
@@ -25,20 +23,16 @@ public abstract class AbstractFlower {
         return color;
     }
 
-    public int getFreshness() {
-        return freshness;
-    }
-
     public int getHeight() {
         return height;
     }
 
-    public double getCost() {
-        return cost;
+    public void setHeight(int height) {
+        this.height = height;
     }
 
-    public void setFreshness(int freshness) {
-        this.freshness = freshness;
+    public double getCost() {
+        return cost;
     }
 
     public void setCost(double cost) {

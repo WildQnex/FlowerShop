@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public class Bouquet {
     private double  cost;
-    private ArrayList<AbstractFlower> flowers;
+    private ArrayList<CutFlower> flowers;
     private ArrayList<Accessory> accessories;
 
     public Bouquet(){
@@ -16,11 +16,11 @@ public class Bouquet {
         this.accessories = new ArrayList<>();
     }
 
-    public void addFlower(AbstractFlower flower) throws IncorrectInputException{
+    public void addFlower(CutFlower flower) throws IncorrectInputException{
         if(flower.getCost() < 0){
             throw new IncorrectInputException("Cost of Flower cant't be negative! Cost:" + flower.getCost());
         }
-        if(flower.getCost() < 0){
+        if(flower.getFreshness() < 0){
             throw new IncorrectInputException("Freshness of Flower cant't be negative! Freshness:" + flower.getFreshness());
         }
         flowers.add(flower);
@@ -39,11 +39,11 @@ public class Bouquet {
         return accessories;
     }
 
-    public ArrayList<AbstractFlower> getFlowers(){
+    public ArrayList<CutFlower> getFlowers(){
         return flowers;
     }
 
-    public void setFlowers(ArrayList<AbstractFlower> flowers){
+    public void setFlowers(ArrayList<CutFlower> flowers){
         this.flowers = flowers;
     }
 

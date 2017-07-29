@@ -1,9 +1,9 @@
 package by.bsuir.flowerShop.report;
 
 
-import by.bsuir.flowerShop.entity.AbstractFlower;
 import by.bsuir.flowerShop.entity.Accessory;
 import by.bsuir.flowerShop.entity.Bouquet;
+import by.bsuir.flowerShop.entity.CutFlower;
 import by.bsuir.flowerShop.exception.IncorrectInputException;
 import by.bsuir.flowerShop.logic.Creator;
 import by.bsuir.flowerShop.logic.Finder;
@@ -29,7 +29,7 @@ public class Reporter {
                     "                  Bouquet\n" +
                     "                Cost: " + bouquet.getCost() + "\n" +
                     "****************************************** ");
-            for (AbstractFlower res : bouquet.getFlowers()) {
+            for (CutFlower res : bouquet.getFlowers()) {
                 LOGGER.debug(res);
             }
             for (Accessory res : bouquet.getAccessories()) {
@@ -42,12 +42,12 @@ public class Reporter {
 
     public static void getFindReport(int min, int max){
         try {
-            ArrayList<AbstractFlower> result = Finder.findInInterval(Creator.createBucket(), min, max);
+            ArrayList<CutFlower> result = Finder.findInInterval(Creator.createBucket(), min, max);
             LOGGER.debug("****************************************** \n" +
                     "          Searched Flowers: \n" +
                     "          Range: " + min + " - " + max +" \n" +
                     "******************************************");
-            for (AbstractFlower res: result){
+            for (CutFlower res: result){
                 LOGGER.debug(res);
             }
         }catch (IncorrectInputException e){
@@ -56,11 +56,11 @@ public class Reporter {
     }
     public static void getSortReport(){
         try {
-            ArrayList<AbstractFlower> result = Sorter.sortByFreshness(Creator.createBucket()).getFlowers();
+            ArrayList<CutFlower> result = Sorter.sortByFreshness(Creator.createBucket()).getFlowers();
             LOGGER.debug("****************************************** \n" +
                     "        Sorted by freshness bouquet\n" +
                     "******************************************");
-            for (AbstractFlower res : result) {
+            for (CutFlower res : result) {
                 LOGGER.debug(res);
             }
         }catch (IncorrectInputException e){
