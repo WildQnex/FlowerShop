@@ -19,15 +19,14 @@ public class Sorter {
     static class flowerFreshnessComparator implements Comparator<CutFlower>{
         @Override
         public int compare(CutFlower flower1, CutFlower flower2){
-            switch (flower2.getFreshness() - flower1.getFreshness()){
-                case 1:
-                    break;
-                case 2:
-                    break;
-                case 3:
-                    break;
+            if(flower1.getFreshness() - flower2.getFreshness() < 0){
+                return 1;
+            } else if(flower2.getFreshness() - flower1.getFreshness() < 0){
+                return -1;
+            }else{
+                return 0;
             }
-                return flower2.getFreshness() - flower1.getFreshness();
+
         }
     }
 }
